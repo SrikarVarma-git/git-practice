@@ -23,19 +23,11 @@ SRIKAR(){
 
 dnf list installed git
 
-SRIKAR $? "package"
-
 if [ $? -ne 0 ]
 then 
     echo "git is not installed.. so please check and install"
     dnf install git -y
-    if [ $? -ne 0 ]
-    then
-        echo "it is not installed please check it"
-        exit 1
-    else 
-        echo "already installation is success"   
-    fi 
+    SRIKAR $? "package"
 else
     echo "already git is installed.. nothing to install"
 fi  
@@ -46,13 +38,7 @@ if [ $? -ne 0 ]
 then 
     echo "mysql is not installed, please install it"
     dnf install mysql -y
-    if [ $? -ne 0 ]
-    then
-        echo "mysql is not installed, please check"
-        exit 1
-    else 
-        echo "already installation is success" 
-    fi
+    SRIKAR $? "package"
 else 
     echo "mysql is installed"
 fi
