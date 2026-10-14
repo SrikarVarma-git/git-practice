@@ -18,6 +18,7 @@ SRIKAR(){
         exit 1
     else 
         echo " $2 is success"
+    fi
 }
 
 dnf list installed git
