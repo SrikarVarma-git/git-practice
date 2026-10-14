@@ -11,4 +11,12 @@ else
 fi    
 
 
-dnf install git -y
+dnf list installed git
+
+if [ $? -ne 0 ]
+then 
+    echo "git is not installed.. so please check and install"
+    dnf install git -y
+else
+    echo "already git is installed.. nothing to install"
+fi  
