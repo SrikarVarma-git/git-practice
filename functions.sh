@@ -2,7 +2,6 @@
 
 USERID=$( id -u )
     
-
 VARMA(){
     if [ $1 -ne 0 ]
     then 
