@@ -22,7 +22,8 @@ then
         echo "it is not installed please check it"
         exit 1
     else 
-        echo "already installation is success"    
+        echo "already installation is success"   
+    fi 
 else
     echo "already git is installed.. nothing to install"
 fi  
