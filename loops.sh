@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-for i in {0..1000}
+for package in {0..1000}
 do 
-  echo $i
+    echo $package
 done
 
 
