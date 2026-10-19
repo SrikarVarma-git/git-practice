@@ -46,6 +46,6 @@ do
          dnf install $package -y  &>>$LOG_FILE
          SRIKAR $? "installing $package"
     else 
-        echo " $package is already $G installed $N" &>>$LOG_FILE
+        echo -e " $package is already $G installed $N" &>>$LOG_FILE
     fi
 done
